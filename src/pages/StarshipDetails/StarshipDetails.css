@@ -1,0 +1,20 @@
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cardContainer {
+  height: auto;
+  padding: 10px 25px 20px 25px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #212d40;
+  color: white;
+}
+
+.cardContainer a {
+  color: white;
+}

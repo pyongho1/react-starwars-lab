@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { getStarshipDetails } from "../../services/sw.api";
 import { useLocation } from "react-router-dom";
+import "./StarshipDetails.css";
 
 const StarshipDetails = () => {
   const [shipDetails, setShipDetails] = useState({});
@@ -18,9 +19,12 @@ const StarshipDetails = () => {
 
   return (
     <>
-      <div>
-        <h1>Starship Details</h1>
-        <h1>{shipDetails.name}</h1>
+      <div className="detailContainer">
+        <div className="cardContainer">
+          <p>NAME: {shipDetails.name}</p>
+          <p>MODEL: {shipDetails.model}</p>
+          <a href="/">RETURN</a>
+        </div>
       </div>
     </>
   );
