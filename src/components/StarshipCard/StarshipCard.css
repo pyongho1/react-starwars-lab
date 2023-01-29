@@ -1,0 +1,10 @@
+.card {
+  background-color: #212d40;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+}
+
+Link {
+  text-decoration: none;
+}
